@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long long int s = 0;
+	int s = 0;
 	int i = 0, j = 1, n = 0;
 
 	printf("%d, %d,", i, j);
