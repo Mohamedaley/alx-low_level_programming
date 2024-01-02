@@ -8,7 +8,7 @@ void print_rev(char *s)
 {
 	int i;
 
-	for ( i = '\0'; s[i] >= [s0]; i--)
+	for ( i = '\0'; s[i] >= s[0]; i--)
 	{
 	_putchar('s[i]');
 	}
