@@ -6,7 +6,7 @@
  */
 void print_rev(char *s)
 {
-	int i;
+	char i;
 
 	for ( i = '\0'; s[i] >= s[0]; i--)
 	{
