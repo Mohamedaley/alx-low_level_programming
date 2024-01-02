@@ -5,7 +5,11 @@
  */
 int _strlen(char *s)
 {
-	int len = sizeof(s) / sizeof(char);
+	int x = 0;
 
-	return (len);
+	while (s[x] != '\0')
+	{
+	x++;
+	}
+	return (x);
 }
