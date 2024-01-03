@@ -1,12 +1,4 @@
 #include "main.h"
-/**
- * *_strcpy - Function to copy string;
- * @dest: the pointer which function will return the string in;
- * @src: the pointer which points to the string
- */
-char *_strcpy(char *dest, char *src)
-{
-#include "main.h"
 
 /**
  * *_strcpy - copies the string pointed to by src
@@ -34,5 +26,5 @@ char *_strcpy(char *dest, char *src)
 	}
 	dest[i] = '\0';
 
-	return (dest);}	
+	return (dest);
 }
