@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 /**
- *
- *
- *
+ * print_array - function to print the elements of an array;
+ *@a: a pointer to the first element of the array;
+ *@n: the number of array elements
  */
 void print_array(int *a, int n)
 {
