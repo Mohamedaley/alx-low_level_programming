@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include "main.h"
-/*
- * main - function to print the passed arguements
- * @argc: the number of arguement passed
- * @argv: the values
- * Return: always 0
+
+/**
+ * main - prints all arguments it receives
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
