@@ -1,8 +1,11 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
 /**
- * malloc_checked - function was made to allocate memory for an array;
- * @b size of the arary
- * Return: pointer to the allocated memory;
+ * *malloc_checked - allocates memory using malloc
+ * @b: number of bytes to allocate
+ *
+ * Return: a pointer to the allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
