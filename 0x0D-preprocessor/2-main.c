@@ -1,9 +1,12 @@
 #include <stdio.h>
+
 /**
- * main - function to print the address of the file
- * Return: (0)
+ * main - prints the name of the file
+ *
+ * Return: Always 0 (Success)
  */
-void main()
+int main(void)
 {
-	printf("%s\n",__FILE__);
+	printf("%s\n", __FILE__);
+	return (0);
 }
