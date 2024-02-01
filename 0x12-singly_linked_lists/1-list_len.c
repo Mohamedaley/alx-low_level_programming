@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * list_len - a function to count the number of elements in a linked list;
  * @h: the head pointer of the linked list;
@@ -7,7 +7,7 @@
 size_t list_len(const list_t *h)
 {
 	int count = 0;
-	size_t *head = (size_t *)h;
+	list_t *head = (list_t *)h;
 	size_t len;
 
 	if (head == NULL)
