@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * print_list - function to print sinlgle linked list
  * @h: the pointer passed
@@ -12,7 +12,7 @@ size_t print_list(const list_t *h)
 
 	head = h;
 	if (head == NULL)
-		return(0);
+		return (0);
 	while (head != NULL)
 	{
 		if (head->str == NULL)
