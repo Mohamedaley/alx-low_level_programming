@@ -6,8 +6,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t length;
-	int len;
+	size_t len;
 
 	if (h == NULL)
 	{
@@ -19,7 +18,6 @@ size_t print_listint(const listint_t *h)
 		printf("%d\n", h->n);
 		h = h->next;
 	}
-	length = len;
-	return (length);
+	return (len);
 }
 
