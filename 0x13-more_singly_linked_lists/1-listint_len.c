@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * listint_len - function to declear the length of linked list;
  * @h: the head of our list;
