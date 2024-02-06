@@ -3,7 +3,6 @@
 /**
  * free_listint2 - frees a linked list
  * @head: pointer to the listint_t list to be freed
- * Return: VOID (Nothing)
  */
 void free_listint2(listint_t **head)
 {
@@ -12,9 +11,9 @@ void free_listint2(listint_t **head)
 	if (head == NULL)
 		return;
 
-	while (temp)
+	while (*head)
 	{
-		temp = temp)->next;
+		temp = (*head)->next;
 		free(*head);
 		*head = temp;
 	}
