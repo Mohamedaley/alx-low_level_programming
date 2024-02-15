@@ -7,19 +7,21 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	void *buffer;
+	int len = 0;
 	ssize_t fd, wr;
 
 	if (filename == NULL)
 		return (-1);
-	buffer = malloc(sizeof(text_content));
 	if (text_content != NULL)
 	{
-	fd = open(filename, O_RDWR);
-	wr = write(fd, buffer, sizeof(text_content) - 1);
+		for (len = 0; text_content[len];)
+			len++;
 	}
+	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	wr = write(fd, buffer, len);
+	if (wr == -1 | fd == -1)
+		return (-1);
 	close(fd);
-	free(buffer);
 	return (1);
 
 }
