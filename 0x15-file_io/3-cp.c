@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - copies the content of a file to another file
  * @argc: number of arguments passed to the program
@@ -8,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int fd_r, fd_w, x, m, n;
-	char buf{BUFSIZ};
+	char buf[BUFSIZ];
 
 	if (argc != 3)
 	{
