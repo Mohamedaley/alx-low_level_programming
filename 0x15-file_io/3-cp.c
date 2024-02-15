@@ -30,16 +30,17 @@ int main(int argc, char *argv[])
 	}
 	close(fd);
 	fd = open(fto, O_RDWR | O_CREAT | O_TRUNC, 0664);
-	wr = dprintf(fd, buffer);
+	wr = write(fd, buffer, 1024);
 	if (fd == -1 || wr == -1)
 	{
 		dprintf(2, "Error: Can't write to %s", fto);
 		exit(99);
 	}
 	in = close(fd);
+	free(buffer);
 	if (in == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", fd);
+		dprintf(2, "Error: Can't close fd %ld\n", fd);
 		exit(100);
 	}
 }
