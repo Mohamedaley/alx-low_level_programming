@@ -1,14 +1,18 @@
 #include "main.h"
+#include <stdlib.h>
+
 /**
- * read_textfile - A function to read sequential access file
- * @filename: the name of the file
- * @letters: the number of letters to be read;
- * Return: the actual number of letters it could read and print;
+ * read_textfile - Reads the content of a file and print int to the stdout;
+ * @filename: A pointer to the name of the file.
+ * @letters: The number of letters the should be printed by the function.
+ *
+ * Return: If the function fails or filename is NULL - 0.
+ *         O/w - the actual number of bytes the function can read and print.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t fd, re, wr;
-	void *buffer;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
@@ -21,14 +25,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	re = read(fd, buffer, letters);
 	wr = write(STDOUT_FILENO, buffer, r);
 
-	if (fd < 0 || wr < 0 || re < 0 || wr != re)
+	if (fd == -1 || re == -1 || wr == -1 || wr != re)
 	{
 		free(buffer);
 		return (0);
 	}
 
 	free(buffer);
-	close(fd);
+	close(o);
 
-	return (wr);
+	return (w);
 }
