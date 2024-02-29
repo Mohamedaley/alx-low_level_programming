@@ -13,9 +13,9 @@
 #include <dirent.h>
 
 /**
- * node - A struct node
- * @data: the data passed;
- * @link: the link of linked list;
+ * struct node - singly linked list
+ * @data: the number field
+ * @link: points to the next node
  */
 typedef struct node
 {
